@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header > img {
+  max-width: 32px;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
