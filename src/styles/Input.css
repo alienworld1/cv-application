@@ -1,8 +1,7 @@
-section {
+section.input-field {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    min-width: 300px;
+    width: 100%;
     background-color: #f7f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

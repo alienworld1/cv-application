@@ -3,3 +3,18 @@
 body {
   font-family: Montserrat, system-ui, Arial, Helvetica, sans-serif;
 }
+
+main {
+  margin: 16px auto;
+  background-color: #fafafa;
+  color: #0a0a0a;
+}
+
+main > section {
+  margin: 32px;
+  padding: 16px;
+}
+
+.details {
+  width: max(100px, 30%);
+}

@@ -7,8 +7,8 @@ export default function Input({id, value, handleChange, label}) {
             <label htmlFor={id}>{label}</label>
             <input
                 type='text'
-                value={value ?? 'name'}
-                onChange={handleChange ?? null}
+                value={value}
+                onChange={handleChange}
             />
         </section>
     )
