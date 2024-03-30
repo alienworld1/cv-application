@@ -9,7 +9,21 @@ export default function GeneralInformation({formDetails, handlers}) {
           label='Name'
           id='name'
           value={formDetails.name}
-          handleChange={handlers.nameHandler}
+          handleChange={handlers.name}
+        />
+        <Input
+          label='Email'
+          id='email'
+          value={formDetails.email}
+          handleChange={handlers.email}
+          type='email'
+        />
+        <Input
+          label='Phone Number'
+          id='phone'
+          value={formDetails.phone}
+          handleChange={handlers.phone}
+          type='number'
         />
     </section>    
   )

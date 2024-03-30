@@ -5,16 +5,15 @@ body {
 }
 
 main {
-  margin: 16px auto;
+  margin: 16px;
   background-color: #fafafa;
   color: #0a0a0a;
-}
-
-main > section {
-  margin: 32px;
-  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 12px 32px;
+  border-radius: 10px;
 }
 
 .details {
-  width: max(100px, 30%);
+  padding-right: 20px;
 }

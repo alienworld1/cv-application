@@ -1,0 +1,8 @@
+.resume {
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.resume h2 {
+  text-align: center;
+}
