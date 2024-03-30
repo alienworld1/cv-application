@@ -18,9 +18,19 @@ const schoolExperience = {
   graduationDate: '02-02-2024',
 }
 
+const practicalExperience = {
+  companyName: 'Company',
+  position: 'Developer',
+  description: 'Develop software',
+  fromDate: '02-02-2023',
+  toDate: '02-02-2024',
+}
+
 export default function App() {
   const [general, setGeneral] = useState(generalInformation);
   const [school, setSchool] = useState(schoolExperience);
+  const [practical, setPractical] = useState(practicalExperience);
+
   const [activeDropdown, setActiveDropdown] = useState(0);
 
   const handlers = {
@@ -41,6 +51,21 @@ export default function App() {
     },
     graduationDate: e => {
       setSchool({...school, graduationDate: e.target.value});
+    },
+    companyName: e => {
+      setPractical({...practical, companyName: e.target.value});
+    },    
+    position: e => {
+      setPractical({...practical, position: e.target.value});
+    },   
+    description: e => {
+      setPractical({...practical, description: e.target.value});
+    },    
+    fromDate: e => {
+      setPractical({...practical, fromDate: e.target.value});
+    },    
+    toDate: e => {
+      setPractical({...practical, toDate: e.target.value});
     },    
   }
 
