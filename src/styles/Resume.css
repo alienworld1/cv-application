@@ -6,3 +6,45 @@
 .resume h2 {
   text-align: center;
 }
+
+.contact img {
+  max-width: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.resume hr {
+  margin: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.school-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-details {
+  margin: 0 16px;
+}
+
+.school-experience > p {
+  margin: 16px;
+}
+
+.school-details p {
+  margin: 0;
+}
