@@ -5,11 +5,12 @@ import GeneralInformation from './components/GeneralInformation';
 import SchoolExperience from './components/SchoolExperience';
 import Resume from './components/Resume';
 import Dropdown from './components/Dropdown';
+import PracticalExperience from './components/PracticalExperience';
 
 const generalInformation = {
   name: 'Bob',
   email: 'example@domain.com',
-  phone: '555-55555',
+  phone: '55555555',
 }
 
 const schoolExperience = {
@@ -89,6 +90,16 @@ export default function App() {
         >
         <SchoolExperience
           formDetails={school}
+          handlers={handlers}
+        />
+      </Dropdown>
+      <Dropdown
+        name='Practical Experience'
+        isActive={activeDropdown === 2}
+        handleClick={() => setActiveDropdown(2)}
+      >
+        <PracticalExperience
+          formDetails={practical}
           handlers={handlers}
         />
       </Dropdown>
