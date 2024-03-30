@@ -4,7 +4,11 @@ import '../styles/Resume.css'
 import email from '../assets/email.svg';
 import phone from '../assets/phone.svg';
 
-export default function Resume({generalDetails,schoolDetails}) {
+export default function Resume({
+  generalDetails,
+  schoolDetails,
+  practicalExperience,
+}) {
   return (
     <div className="resume">
       <section className="general">
@@ -21,12 +25,20 @@ export default function Resume({generalDetails,schoolDetails}) {
         </div>
       </section>
       <hr/>
-      <section className="school-experience">
-          <div className="school-details">
+      <section className="experience">
+          <div className="left-right">
             <p className="bold">{schoolDetails.schoolName}</p>
             <p>Graduated at: {schoolDetails.graduationDate}</p>
           </div>
           <p>{schoolDetails.titleOfStudy}</p>
+      </section>
+      <hr/>
+      <section className="experience">
+        <div className="left-right">
+          <p className="bold">{practicalExperience.companyName}</p>
+          <p>{practicalExperience.fromDate} - {practicalExperience.toDate}</p>
+        </div>
+        <p>{practicalExperience.position}, <i>{practicalExperience.description}</i></p>
       </section>
     </div>
   )

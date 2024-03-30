@@ -107,6 +107,7 @@ export default function App() {
       <Resume
         generalDetails={general}
         schoolDetails={school}
+        practicalExperience={practical}
       />
     </main>
   )

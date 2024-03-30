@@ -33,19 +33,19 @@
   font-weight: bold;
 }
 
-.school-details {
+.left-right {
   display: flex;
   justify-content: space-between;
 }
 
-.school-details {
+.left-right {
   margin: 0 16px;
 }
 
-.school-experience > p {
+.experience > p {
   margin: 16px;
 }
 
-.school-details p {
+.left-right p {
   margin: 0;
 }
