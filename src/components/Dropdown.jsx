@@ -5,7 +5,6 @@ export default function Dropdown({name, isActive, children, handleClick}) {
     <div className="dropdown">
       <div className="head" onClick={handleClick}>
         <h2>{name}</h2>
-        <h2>^</h2>
       </div>
       <div className={isActive? 'visible' : ''}>
         {children}

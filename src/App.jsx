@@ -9,7 +9,7 @@ import Dropdown from './components/Dropdown';
 const generalInformation = {
   name: 'Bob',
   email: 'example@domain.com',
-  phoneNumber: '555-55555',
+  phoneNumber: 55555555,
 }
 
 const schoolExperience = {

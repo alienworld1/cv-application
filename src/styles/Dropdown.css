@@ -1,16 +1,49 @@
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180);
+  }
+}
+
 .dropdown > .head{
-  display: flex;
-  justify-content: space-between;
+  background-color: #6b21a8;
+  color: #fafafa;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
 }
 
 .dropdown {
   padding-right: 20px;
+  margin: 20px 0;
 }
 
 .dropdown > div:nth-child(2) {
   display: none;
+  opacity: 0;
+  z-index: 1;
+  animation: dropdownAnimation 0.3s ease-in-out forwards;
 }
 
 .dropdown > div:nth-child(2).visible {
   display: block;
+  opacity: 1;
+}
+
+.dropdown h2 {
+  margin: 0;
+  padding: 0;
 }
