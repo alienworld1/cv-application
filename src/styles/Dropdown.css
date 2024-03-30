@@ -1,0 +1,16 @@
+.dropdown > .head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  padding-right: 20px;
+}
+
+.dropdown > div:nth-child(2) {
+  display: none;
+}
+
+.dropdown > div:nth-child(2).visible {
+  display: block;
+}

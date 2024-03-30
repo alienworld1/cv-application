@@ -4,7 +4,6 @@ import Input from "./Input";
 export default function SchoolExperience({formDetails, handlers}) {
   return (
     <section className="details">
-        <h2>School Experience</h2>
         <Input
           label='School Name'
           id='name'

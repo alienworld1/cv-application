@@ -4,6 +4,7 @@ import { useState } from 'react';
 import GeneralInformation from './components/GeneralInformation';
 import SchoolExperience from './components/SchoolExperience';
 import Resume from './components/Resume';
+import Dropdown from './components/Dropdown';
 
 const generalInformation = {
   name: 'Bob',
@@ -20,6 +21,7 @@ const schoolExperience = {
 export default function App() {
   const [general, setGeneral] = useState(generalInformation);
   const [school, setSchool] = useState(schoolExperience);
+  const [activeDropdown, setActiveDropdown] = useState(0);
 
   const handlers = {
     name: e => {
@@ -45,14 +47,26 @@ export default function App() {
   return (
     <main>
       <div className="inputs">
-        <GeneralInformation
-          formDetails={general}
-          handlers={handlers}
-        />
+        <Dropdown
+          name='General Information'
+          isActive={activeDropdown === 0}
+          handleClick={() => setActiveDropdown(0)}
+        >
+          <GeneralInformation
+            formDetails={general}
+            handlers={handlers}
+          />
+        </Dropdown>
+        <Dropdown
+          name='School Experience'
+          isActive={activeDropdown === 1}
+          handleClick={() => setActiveDropdown(1)}
+        >
         <SchoolExperience
           formDetails={school}
           handlers={handlers}
         />
+      </Dropdown>
       </div>
       <Resume
         generalDetails={general}
